@@ -5,7 +5,7 @@ sudo apt install podman -y
 #
 # curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
 #
-# when Distrobox supports Crostini
+# when the latest release of Distrobox supports Crostini
 
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh -s -- --next
 
