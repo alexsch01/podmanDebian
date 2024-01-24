@@ -1,6 +1,5 @@
 sudo apt update
 sudo apt install podman -y
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
-echo "$USER:10000:65536" | sudo tee -a /etc/subgid
-echo "$USER:10000:65536" | sudo tee -a /etc/subuid
+sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $USER
 podman system migrate
